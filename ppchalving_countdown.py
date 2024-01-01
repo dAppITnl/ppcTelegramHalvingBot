@@ -35,3 +35,4 @@ while block < (halvingBlock + 2):
                 print("Error:\n" + str(e))
     old = block
     time.sleep(abs(less) + 2)
+print("Done! block=" + str(block) + " halving=" + str(halvingBlock))
