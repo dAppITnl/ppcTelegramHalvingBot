@@ -8,7 +8,7 @@ channel="-1002008849502" #destination channel numeric id Ex. -100xxxxxxxxxxx
 
 old = 0
 block = 0
-halvingBlock = 630000
+halvingBlock = 630000 + 210000
 rocket = u'\U0001F680'
 customMessage = "https://www.youtube.com/watch?v=PDJLvF1dUek"  # Text, url etc.
 
