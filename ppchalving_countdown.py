@@ -34,5 +34,5 @@ while block < (halvingBlock + 2):
             except TelegramError as e:
                 print("Error:\n" + str(e))
     old = block
-    time.sleep(abs(less) + 2)
+    time.sleep( 30 * 60 )
 print("Done! block=" + str(block) + " halving=" + str(halvingBlock))
