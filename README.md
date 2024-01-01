@@ -15,4 +15,10 @@ To set up and run this project, follow these steps:
   pip3 install requests
   pip3 install python-telegram-bot
   pip3 list
-```
+  ```
+
+2. **Run crontab**:
+  ```
+  0 * * * * /path/to/runhalving.sh >>/path/to/ppchalving_countdown.log 2>&1
+  ```
+
