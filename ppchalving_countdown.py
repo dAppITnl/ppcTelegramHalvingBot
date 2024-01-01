@@ -21,14 +21,14 @@ while block < (halvingBlock + 2):
     less = block - halvingBlock
     if old != block:
         if less < 0:
-            txt = "Block " + str(block) + " mined!\n\n" + str(abs(less)) + " blocks to Halving!"
+            txt = "BTC block " + str(block) + " mined!\n" + str(abs(less)) + " blocks to Halving!"
             print(txt)
             try:
                 bot.send_message(chat_id=channel, text=txt, parse_mode='HTML')  # Send message
             except TelegramError as e:
                 print("Error:\n" + str(e))
         if block == halvingBlock:
-            txt = rocket * 5 + "\n\nBlock " + str(block) + " mined!\n\n Happy Halving!\n\n" + rocket * 6 + "\n\n" + customMessage
+            txt = rocket * 5 + "\n\nBTC block " + str(block) + " mined!\n\n Happy BTC Halving!\n\n" + rocket * 6 + "\n\n" + customMessage
             try:
                 bot.send_message(chat_id=channel, text=txt, parse_mode='HTML')  # Send message
             except TelegramError as e:
