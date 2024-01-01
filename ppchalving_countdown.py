@@ -14,7 +14,8 @@ customMessage = "https://www.youtube.com/watch?v=PDJLvF1dUek"  # Text, url etc.
 
 bot = Bot(token)
 
-while block < (halvingBlock + 2):
+#while 
+if block < (halvingBlock + 2):
     r = requests.get('https://blockchain.info/q/getblockcount')
     block = int(r.text)
     print(str(block))
@@ -34,5 +35,5 @@ while block < (halvingBlock + 2):
             except TelegramError as e:
                 print("Error:\n" + str(e))
     old = block
-    time.sleep( 30 * 60 )
-print("Done! block=" + str(block) + " halving=" + str(halvingBlock))
+    # time.sleep( 30 * 60 )
+#print("Done! block=" + str(block) + " halving=" + str(halvingBlock))
